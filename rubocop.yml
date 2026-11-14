@@ -1,7 +1,7 @@
 #
 # https://github.com/bbatsov/rubocop/blob/master/config/default.yml
 #
-require:
+plugins:
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
@@ -11,13 +11,13 @@ inherit_mode:
     - Exclude
     - Include
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 
 Layout/EmptyLineAfterMagicComment:
@@ -43,7 +43,7 @@ Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 100
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 500
 
 Metrics/PerceivedComplexity:
